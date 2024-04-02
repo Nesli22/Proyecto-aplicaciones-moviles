@@ -70,10 +70,7 @@ class InicioSesionActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT,
                 ).show()
             }
-
-
         }
-
 
         this.tvRegistrarse.setOnClickListener{
             var intent = Intent(this, RegistroAplicacionActivity::class.java)
