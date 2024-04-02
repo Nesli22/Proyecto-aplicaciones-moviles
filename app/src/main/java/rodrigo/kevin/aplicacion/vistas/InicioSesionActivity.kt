@@ -1,5 +1,6 @@
 package rodrigo.kevin.aplicacion.vistas
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -25,6 +26,10 @@ class InicioSesionActivity : AppCompatActivity() {
         this.txtCorreo = findViewById(R.id.txtCorreo)
         this.txtContra = findViewById(R.id.txtContra)
 
+        this.tvRegistrarse.setOnClickListener{
+            var intent = Intent(this, RegistroAplicacionActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }
