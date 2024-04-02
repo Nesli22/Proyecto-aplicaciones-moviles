@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProyectoAplicacionMovil"
         tools:targetApi="31">
         <activity
+            android:name=".aplicacion.vistas.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".aplicacion.vistas.RegistroAplicacionActivity"
             android:exported="false" />
         <activity
