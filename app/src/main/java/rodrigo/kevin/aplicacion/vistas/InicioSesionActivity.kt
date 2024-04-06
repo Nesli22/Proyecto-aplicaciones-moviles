@@ -52,7 +52,8 @@ class InicioSesionActivity : AppCompatActivity() {
                                 "Se ha iniciado sesión correctamente.",
                                 Toast.LENGTH_SHORT,
                             ).show()
-                            var intent = Intent(this, MainActivity::class.java)
+                            var intent = Intent(this, MenuPrincipalActivity::class.java)
+                          
                             startActivity(intent)
                         } else {
                             Log.w("Error", "signInWithEmail:failure", task.exception)

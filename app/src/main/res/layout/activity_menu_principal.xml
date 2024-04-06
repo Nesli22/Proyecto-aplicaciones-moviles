@@ -7,14 +7,52 @@
     tools:context=".aplicacion.vistas.MenuPrincipalActivity">
 
 
-    <FrameLayout
+    <LinearLayout
+        android:id="@+id/menuNavegacion"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:background="#3D2216">
-    </FrameLayout>
+        android:background="#3D2216"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#3D2216"
+            android:contentDescription="Inicio"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#3D2216"
+            android:contentDescription="Perfil"
+            app:srcCompat="@drawable/perfil" />
+
+        <ImageButton
+            android:id="@+id/btnCarrito"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#3D2216"
+            android:contentDescription="Carrito"
+            app:srcCompat="@drawable/carrito" />
+
+        <ImageButton
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="Ajustes"
+            android:backgroundTint="#3D2216"
+            app:srcCompat="@drawable/ajustes" />
+    </LinearLayout>
 
 </RelativeLayout>
