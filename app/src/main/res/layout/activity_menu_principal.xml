@@ -4,8 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
     tools:context=".aplicacion.vistas.MenuPrincipalActivity">
 
+    <LinearLayout
+        android:id="@+id/contenedorBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#3D2216"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:fontFamily="@font/robotoregular"
+            android:drawableLeft="@drawable/buscar"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            android:hint="Buscar"
+            android:textColorHint="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenedorPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuNavegacion"
+        android:layout_below="@+id/contenedorBuscar"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/white"
+        android:background="#3D2216"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/menuNavegacion"
