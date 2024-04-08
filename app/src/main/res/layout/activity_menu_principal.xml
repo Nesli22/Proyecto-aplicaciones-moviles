@@ -10,16 +10,35 @@
     <LinearLayout
         android:id="@+id/contenedorBuscar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="120dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
         android:background="#3D2216"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:paddingTop="5dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         >
 
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/robotoblackitalic"
+        android:text="MELO"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotoblackitalic"
+            android:text="CAFE DE ESPECIALIDAD"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/editTextText"
@@ -49,7 +68,10 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contenedorProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
