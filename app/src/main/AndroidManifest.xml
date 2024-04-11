@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.ProyectoAplicacionMovil"
         tools:targetApi="31">
+
+        <activity android:name=".aplicacion.vistas.UserProfileActivity" />
+        <activity android:name=".aplicacion.vistas.UserAjustesActivity" />
+        <activity android:name=".aplicacion.vistas.UserCarritoActivity" />
         <activity
             android:name=".aplicacion.vistas.MenuPrincipalActivity"
             android:exported="false" />

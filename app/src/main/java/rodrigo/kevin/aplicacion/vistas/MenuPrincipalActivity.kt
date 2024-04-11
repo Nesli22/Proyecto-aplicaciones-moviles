@@ -1,7 +1,9 @@
 package rodrigo.kevin.aplicacion.vistas
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,4 +26,19 @@ class MenuPrincipalActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapterProductos(ServicioProductos.listaProductosGeneral)
     }
-}
+
+        public fun onBtnPerfilClick(view: View) {
+            val intent = Intent(this, UserProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+    public fun onBtnCarritoClick(view: View) {
+        val intent = Intent(this, UserCarritoActivity::class.java)
+        startActivity(intent)
+    }
+
+    public fun onBtnAjustesClick(view: View) {
+        val intent = Intent(this, UserAjustesActivity::class.java)
+        startActivity(intent)
+    }
+    }

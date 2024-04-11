@@ -12,13 +12,13 @@ class viewHolderProducto(val view: View) : RecyclerView.ViewHolder(view){
     val imagen = view.findViewById<ImageView>(R.id.imagenProducto)
     val nombre = view.findViewById<TextView>(R.id.nombreProducto)
     val cantidad = view.findViewById<TextView>(R.id.cantidadProducto)
-    val precio = view.findViewById<TextView>(R.id.precioProducto)
+    var precio = view.findViewById<TextView>(R.id.precioProducto)
     val descripcion = view.findViewById<TextView>(R.id.descripcionProducto)
 
     fun obtenerProducto(producto: Producto){
         nombre.text = producto.nombre
         cantidad.text = producto.cantidad
-        precio.text = producto.precio
+        precio.text = producto.precio.toString()
         descripcion.text = producto.descripcion
     }
 }

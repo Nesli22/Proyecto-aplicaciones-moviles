@@ -101,7 +101,8 @@
             android:layout_weight="1"
             android:backgroundTint="#3D2216"
             android:contentDescription="Perfil"
-            app:srcCompat="@drawable/perfil" />
+            app:srcCompat="@drawable/perfil"
+            android:onClick="onBtnPerfilClick" />
 
         <ImageButton
             android:id="@+id/btnCarrito"
@@ -110,7 +111,8 @@
             android:layout_weight="1"
             android:backgroundTint="#3D2216"
             android:contentDescription="Carrito"
-            app:srcCompat="@drawable/carrito" />
+            app:srcCompat="@drawable/carrito"
+            android:onClick="onBtnCarritoClick" />
 
         <ImageButton
             android:id="@+id/btn"
@@ -119,7 +121,9 @@
             android:layout_weight="1"
             android:contentDescription="Ajustes"
             android:backgroundTint="#3D2216"
-            app:srcCompat="@drawable/ajustes" />
+            app:srcCompat="@drawable/ajustes"
+            android:onClick="onBtnAjustesClick" />
+
     </LinearLayout>
 
 </RelativeLayout>
