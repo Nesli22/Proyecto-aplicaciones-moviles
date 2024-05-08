@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "404112807565",
+    "project_id": "proyectoaplicacionmovilcafe",
+    "storage_bucket": "proyectoaplicacionmovilcafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404112807565:android:b9302a000b1d01a607b4c4",
+        "android_client_info": {
+          "package_name": "rodrigo.kevin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrUWx0DOvQNfyfmYzlfgvqdDCkDE1upnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

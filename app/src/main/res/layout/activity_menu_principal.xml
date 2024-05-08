@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+
+    tools:context=".aplicacion.vistas.MenuPrincipalActivity">
+
+    <LinearLayout
+        android:id="@+id/contenedorBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#352514"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/robotoblackitalic"
+        android:text="MELO"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotoblackitalic"
+            android:text="CAFE DE ESPECIALIDAD PARA"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/txtUsuarioInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotoblackitalic"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenedorPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuNavegacion"
+        android:layout_below="@+id/contenedorBuscar"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#553a20	"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nosotros"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/robotomedium"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Bienvenido a MELO, un lugar donde la pasión por el café se encuentra con la calidez de la comunidad. En MELO, nos esforzamos por ofrecer a nuestros clientes una experiencia única de café, donde cada taza está cuidadosamente preparada para deleitar los sentidos y crear momentos memorables."
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="15sp"
+                    android:justificationMode="inter_word"/>
+
+                <Button
+                    android:id="@+id/btnOrdenar"
+                    style="button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/robotobold"
+                    android:text="ORDENA AQUI"
+                    android:textColor="@color/brown" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Galeria MELO"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/robotomedium"
+                    android:textSize="25dp"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:contentDescription="imagenes"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="350dp"
+                            android:src="@drawable/nosotros2">
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="350dp"
+                            android:src="@drawable/nosotros1">
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="350dp"
+                            android:src="@drawable/nosotros3">
+                        </ImageView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nuestros menus"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/robotomedium"
+                    android:textSize="25dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="imagenes"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:src="@drawable/menu1">
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:src="@drawable/menu2">
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="400dp"
+                            android:src="@drawable/menu3">
+                        </ImageView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Donde estamos?"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/robotomedium"
+                    android:textSize="25dp"/>
+
+                <ImageView
+android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="264dp"
+                    android:src="@drawable/mapa" />
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuNavegacion"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#3D2216"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <ImageButton
+            android:id="@+id/btnInicio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#3D2216"
+            android:contentDescription="Inicio"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#3D2216"
+            android:contentDescription="Perfil"
+            app:srcCompat="@drawable/perfil" />
+
+        <ImageButton
+            android:id="@+id/btnCarrito"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#3D2216"
+            android:contentDescription="Carrito"
+            app:srcCompat="@drawable/carrito" />
+
+        <ImageButton
+            android:id="@+id/btnAjustes"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="Ajustes"
+            android:backgroundTint="#3D2216"
+            app:srcCompat="@drawable/ajustes" />
+    </LinearLayout>
+
+</RelativeLayout>
