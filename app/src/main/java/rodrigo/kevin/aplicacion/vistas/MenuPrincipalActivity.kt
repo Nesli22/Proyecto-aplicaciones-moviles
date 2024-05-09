@@ -3,6 +3,7 @@ package rodrigo.kevin.aplicacion.vistas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
@@ -15,6 +16,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
     private lateinit var btnPerfil: ImageButton
     private lateinit var btnOrdenarAqui: Button
     private lateinit var txtUsuario: TextView
+    private lateinit var btnAjustes: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +25,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
         btnPerfil = findViewById(R.id.btnPerfil)
         btnOrdenarAqui = findViewById(R.id.btnOrdenar)
         txtUsuario = findViewById(R.id.txtUsuarioInicio)
+        btnAjustes = findViewById(R.id.btnAjustes)
 
         if (ServicioUsuarios.usuarioLogueado != null) {
             val usuario = ServicioUsuarios.usuarioLogueado!!
@@ -38,6 +41,11 @@ class MenuPrincipalActivity : AppCompatActivity() {
             val siguiente = Intent(this, OrdenarActivity::class.java)
             startActivity(siguiente)
         }
+        btnAjustes.setOnClickListener{
+            val siguiente = Intent(this, AjustesActivity::class.java)
+            startActivity(siguiente)
+        }
 
     }
+
 }
